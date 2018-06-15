@@ -15,7 +15,7 @@ setup(
     packages=find_packages(exclude=('tests',)),
     entry_points={'console_scripts': [
         'csv2sqlite.py = dump2polarion.csv2sqlite_cli:main',
-        'polarion_dumper.py = dump2polarion.dumper_cli'
+        'polarion_dumper.py = dump2polarion.dumper_cli:main'
     ]},
     setup_requires=['setuptools_scm'],
     install_requires=['requests', 'pyyaml'],
